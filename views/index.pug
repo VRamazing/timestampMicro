@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1.h API Basejump: Timestamp microservice
+  br
+  br
+  h2 Example usage:
+  p.color http://localhost:3000/December%2015,%202015
+  p.color http://localhost:3000/1450117800000
+  h2 Example output:
+  span.color { "unix": 1450117800000, "natural": "December 15, 2015" } 
